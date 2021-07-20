@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Page Not Found - Brand</title>
+    <title>Table - Brand</title>
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
                     <div class="sidebar-brand-text mx-3"><span>MySpeech</span></div>
                 </a>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="app.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none">
+                    <li class="nav-item"><a class="nav-link active" href="app.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 3C18 2.65342 17.8205 2.33156 17.5257 2.14935C17.2309 1.96714 16.8628 1.95058 16.5528 2.10557L8.76393 6H5C3.34315 6 2 7.34315 2 9C2 10.6569 3.34315 12 5 12H5.27925L7.05132 17.3162C7.18744 17.7246 7.56958 18 8.00001 18H9.00001C9.55229 18 10 17.5523 10 17V12.618L16.5528 15.8944C16.8628 16.0494 17.2309 16.0329 17.5257 15.8507C17.8205 15.6684 18 15.3466 18 15V3Z" fill="currentColor"></path>
                             </svg><span>Home</span></a><a class="nav-link" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none">
                                 <path d="M2 10C2 5.58172 5.58172 2 10 2V10H18C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="currentColor"></path>
@@ -83,13 +83,84 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="container-fluid">
-                    <div class="text-center mt-5">
-                        <div class="error mx-auto" data-text="404">
-                            <p class="m-0">404</p>
+                <div class="container-fluid"><h3 class="text-dark mb-4">App</h3>
+<link rel="preload" href="https://myspeech.borgcreative.com/f/please-f.mp3v">
+<link rel="preload" href="https://myspeech.borgcreative.com/f/wouldyou-f.mp3">
+<link rel="preload" href="https://myspeech.borgcreative.com/f/couldyou-f.mp3">
+<link rel="preload" href="https://myspeech.borgcreative.com/f/getme-f.mp3">
+<link rel="preload" href="https://myspeech.borgcreative.com/f/grab-f.mp3">
+<link rel="preload" href="https://myspeech.borgcreative.com/f/togo-f.mp3">
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <p class="text-primary m-0 fw-bold">Question Starters</p>
                         </div>
-                        <p class="text-dark mb-5 lead">Page Not Found</p>
-                        <p class="text-black-50 mb-0">It looks like you found a glitch in the matrix...</p><a href="/">← Back to Dashboard</a>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><button onclick="wouldyouf()" class="btn btn-success" type="button">Would you...</button>
+
+
+
+<script>
+    function wouldyouf() {
+      var audio = document.getElementById("wouldyouf");
+      audio.play();
+    }
+  </script>
+
+  <audio id="wouldyouf" src="https://myspeech.borgcreative.com/f/wouldyou-f.mp3"></audio>
+</td>
+                                            <td><button onclick="couldyouf()" class="btn btn-success" type="button">Could you...</button>
+
+
+
+<script>
+    function couldyouf() {
+      var audio = document.getElementById("couldyouf");
+      audio.play();
+    }
+  </script>
+
+  <audio id="couldyouf" src="https://myspeech.borgcreative.com/f/couldyou-f.mp3"></audio>
+</td>
+                                        </tr>
+                                        <tr>
+                                            <td><button onclick="pleasef()" class="btn btn-success" type="button">Please...</button>
+
+
+
+<script>
+    function pleasef() {
+      var audio = document.getElementById("pleasef");
+      audio.play();
+    }
+  </script>
+
+  <audio id="pleasef" src="https://myspeech.borgcreative.com/f/please-f.mp3"></audio>
+</td>
+                                            <td><button onclick="getmef()" class="btn btn-success" type="button">Get me...</button>
+
+
+
+<script>
+    function getmef() {
+      var audio = document.getElementById("getmef");
+      audio.play();
+    }
+  </script>
+
+  <audio id="getmef" src="https://myspeech.borgcreative.com/f/getme-f.mp3"></audio>
+</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
