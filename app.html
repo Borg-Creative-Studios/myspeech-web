@@ -30,8 +30,12 @@
 <link rel="preload" href="https://myspeech.borgcreative.com/f/couldyou-f.mp3">
 <link rel="preload" href="https://myspeech.borgcreative.com/f/getme-f.mp3">
 <link rel="preload" href="https://myspeech.borgcreative.com/f/grab-f.mp3">
-<link rel="preload" href="https://myspeech.borgcreative.com/f/togo-f.mp3"><div class="card shadow"><div class="card-header py-3"><p class="text-primary m-0 fw-bold">Starters</p></div><div class="card-body" style="min-height: 100%;"><div class="table-responsive"><table class="table"><thead><tr></tr></thead><tbody><tr><td><button onclick="wouldyouf()" class="btn btn-success" type="button">Would you...</button>
+<link rel="preload" href="https://myspeech.borgcreative.com/f/togo-f.mp3"><div class="card shadow"><div class="card-header py-3"><p class="text-primary m-0 fw-bold">Starters</p></div><div class="card-body" style="min-height: 100%;"><div class="table-responsive"><table class="table"><thead><tr></tr></thead><tbody><tr><td><button onclick="wouldyouf(), s1()" class="btn btn-success" type="button">Would you...</button>
+<p></p>
+<div id="wouldyoufs"> 
 
+
+</div>
 
 
 <script>
@@ -42,7 +46,32 @@
   </script>
 
   <audio id="wouldyouf" src="https://myspeech.borgcreative.com/f/wouldyou-f.mp3"></audio>
-</td><td><button onclick="couldyouf()" class="btn btn-success" type="button">Could you...</button>
+
+  <script>
+    function s1() {
+        var x = document.getElementById("wouldyoufs");
+        document.getElementById("wouldyoufs").innerHTML = '<p><button onclick="pleasef()" class="btn btn-success" type="button">Please...</button>    </p><p><button onclick="closes1()" class="btn btn-dark" type="button">-close-</button> </p>';
+    }
+</script>
+
+
+<script>
+  function closes1() {
+      var x = document.getElementById("wouldyoufs");
+      document.getElementById("wouldyoufs").innerHTML = '';
+  }
+</script>
+
+
+
+<script>
+  function pleasef() {
+    var audio = document.getElementById("pleasef");
+    audio.play();
+  }
+</script>
+
+<audio id="pleasef" src="https://myspeech.borgcreative.com/f/please-f.mp3"></audio></td><td><button onclick="couldyouf()" class="btn btn-success" type="button">Could you...</button>
 
 
 
