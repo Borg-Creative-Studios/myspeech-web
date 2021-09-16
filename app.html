@@ -45,7 +45,15 @@
     }
   </script>
 
+<script>
+  function getmef() {
+    var audio = document.getElementById("getmef");
+    audio.play();
+  }
+</script>
+
   <audio id="wouldyouf" src="https://myspeech.borgcreative.com/f/wouldyou-f.mp3"></audio>
+  <audio id="getmef" src="https://myspeech.borgcreative.com/f/getme-f.mp3"></audio>
 
   <script>
     function s1() {
@@ -84,7 +92,55 @@
   </script>
 
   <audio id="couldyouf" src="https://myspeech.borgcreative.com/f/couldyou-f.mp3"></audio>
-</td></tr><tr><td><button onclick="pleasef()" class="btn btn-success" type="button">Please...</button>
+</td></tr><tr><td><button onclick="hellof(), s2()" class="btn btn-success" type="button">Hello...</button>
+<p></p>
+<div id="hellos"> 
+
+
+</div>
+
+
+<script>
+    function hellof() {
+      var audio = document.getElementById("hellof");
+      audio.play();
+    }
+  </script>
+
+  <audio id="hellof" src="https://myspeech.borgcreative.com/f/hello-f.mp3"></audio>
+
+  <script>
+    function howareyouf() {
+      var audio = document.getElementById("howareyouf");
+      audio.play();
+    }
+  </script>
+  <audio id="howareyouf" src="https://myspeech.borgcreative.com/f/howareyou-f.mp3"></audio>
+
+  <script>
+    function whatareyoudoingf() {
+      var audio = document.getElementById("whatareyoudoingf");
+      audio.play();
+    }
+  </script>
+  <audio id="whatareyoudoingf" src="https://myspeech.borgcreative.com/f/whatareyoudoing-f.mp3"></audio>
+
+
+  <script>
+    function s2() {
+        var x = document.getElementById("hellos");
+        document.getElementById("hellos").innerHTML = '<p><button onclick="howareyouf()" class="btn btn-success" type="button">How are you?</button> <button onclick="whatareyoudoingf()" class="btn btn-success" type="button">What are you doing?</button>    </p><p><button onclick="closes2()" class="btn btn-dark" type="button">-close-</button> </p>';
+    }
+</script>
+
+
+<script>
+  function closes2() {
+      var x = document.getElementById("hellos");
+      document.getElementById("hellos").innerHTML = '';
+  }
+</script>
+</td><td><button onclick="pleasef()" class="btn btn-success" type="button">Please...</button>
 
 
 
@@ -96,16 +152,4 @@
   </script>
 
   <audio id="pleasef" src="https://myspeech.borgcreative.com/f/please-f.mp3"></audio>
-</td><td><button onclick="hellotiktokf()" class="btn btn-success" type="button">Hello TikTok</button>
-
-
-
-<script>
-    function hellotiktokf() {
-      var audio = document.getElementById("hellotiktokf");
-      audio.play();
-    }
-  </script>
-
-  <audio id="hellotiktokf" src="https://myspeech.borgcreative.com/f/hellotiktok-f.mp3"></audio>
 </td></tr></tbody></table></div></div></div></div></div><footer class="bg-white sticky-footer"><div class="container my-auto"><div class="text-center my-auto copyright"><span>Copyright © Borg Creative Studios, LLC 2021</span></div></div></footer></div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div><script src="assets/bootstrap/js/bootstrap.min.js"></script><script src="assets/js/bs-init.js"></script><script src="assets/js/sounds.js"></script><script src="assets/js/theme.js"></script></body></html>
