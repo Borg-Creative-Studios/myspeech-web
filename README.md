@@ -1,5 +1,5 @@
 # MySpeech - Web/Mobile Version
-
+---
 ### About
 
 "MySpeech is designed to be an open source, free speech resource for individuals that cannot speak.
@@ -22,6 +22,7 @@ Follow our Twitter for updates!
 
 https://twitter.com/borgcreative
 
+---
 ### Development
 
 MySpeech (Web/Mobile) is being developed in JavaScript, HTML, and CSS. 
