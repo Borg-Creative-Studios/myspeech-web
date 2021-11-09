@@ -12,6 +12,8 @@
 <path d="M10 18C8.34315 18 7 16.6569 7 15H13C13 16.6569 11.6569 18 10 18Z" fill="currentColor"></path>
 </svg></a><div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in"><h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#"><div class="me-3"><div class="bg-primary icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="text-white">
 <path d="M7 16C4.79086 16 3 14.2091 3 12C3 10.0929 4.33457 8.4976 6.12071 8.09695C6.04169 7.74395 6 7.37684 6 7C6 4.23858 8.23858 2 11 2C13.4193 2 15.4373 3.71825 15.9002 6.00098C15.9334 6.00033 15.9666 6 16 6C18.7614 6 21 8.23858 21 11C21 13.419 19.2822 15.4367 17 15.9M15 13L12 10M12 10L9 13M12 10L12 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></div></div><div><span class="small text-gray-500">November 9, 2021</span><p>We have updated several functions and begun building new ones.</p></div></a><a class="dropdown-item d-flex align-items-center" href="#"><div class="me-3"><div class="bg-primary icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="text-white">
+<path d="M7 16C4.79086 16 3 14.2091 3 12C3 10.0929 4.33457 8.4976 6.12071 8.09695C6.04169 7.74395 6 7.37684 6 7C6 4.23858 8.23858 2 11 2C13.4193 2 15.4373 3.71825 15.9002 6.00098C15.9334 6.00033 15.9666 6 16 6C18.7614 6 21 8.23858 21 11C21 13.419 19.2822 15.4367 17 15.9M15 13L12 10M12 10L9 13M12 10L12 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg></div></div><div><span class="small text-gray-500">September 15, 2021</span><p>A new update has been released. This update fixes several menu problems.</p></div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a></div></div></li><li class="nav-item d-block d-print-none d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none dropdown no-arrow"><div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="width: 25px;height: 25px;color: #E7886D;">
 <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span></a><div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="app.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" class="fa-sm fa-fw me-2 text-gray-400">
@@ -234,4 +236,93 @@ function closenum() {
   <audio id="eightf" src="https://myspeech.borgcreative.com/f/8-f.mp3"></audio>
   <audio id="ninef" src="https://myspeech.borgcreative.com/f/9-f.mp3"></audio>
   <audio id="zerof" src="https://myspeech.borgcreative.com/f/0-f.mp3"></audio>
+</td></tr><tr><td><h5>Food</h5></td></tr><tr><td><button onclick="s3()" class="btn btn-success" type="button">Meat</button>
+<p></p>
+<div id="meat"> 
+
+
+</div>
+
+
+<script>
+    function turkeyf() {
+      var audio = document.getElementById("turkeyf");
+      audio.play();
+    }
+  </script>
+
+  <audio id="turkeyf" src="https://myspeech.borgcreative.com/f/turkey-f.mp3"></audio>
+
+  <script>
+    function steakf() {
+      var audio = document.getElementById("steakf");
+      audio.play();
+    }
+  </script>
+  <audio id="steakf" src="https://myspeech.borgcreative.com/f/steak-f.mp3"></audio>
+
+  <script>
+    function chickenf() {
+      var audio = document.getElementById("chickenf");
+      audio.play();
+    }
+  </script>
+  <audio id="chickenf" src="https://myspeech.borgcreative.com/f/chicken-f.mp3"></audio>
+
+
+  <script>
+    function s3() {
+        var x = document.getElementById("meat");
+        document.getElementById("meat").innerHTML = '<p><button onclick="chickenf()" class="btn btn-success" type="button">Chicken</button><button onclick="turkeyf()" class="btn btn-success" type="button">Turkey</button> <button onclick="steakf()" class="btn btn-success" type="button">Steak</button>    </p><p><button onclick="closes3()" class="btn btn-dark" type="button">-close-</button> </p>';
+    }
+</script>
+
+
+<script>
+  function closes3() {
+      var x = document.getElementById("meat");
+      document.getElementById("meat").innerHTML = '';
+  }
+</script>
+</td><td><button onclick="s4()" class="btn btn-success" type="button">Fruit</button>
+<p></p>
+<div id="fruit"> 
+
+
+</div>
+
+
+<script>
+    function orangef() {
+      var audio = document.getElementById("orangef");
+      audio.play();
+    }
+  </script>
+
+  <audio id="orangef" src="https://myspeech.borgcreative.com/f/orange-f.mp3"></audio>
+
+  <script>
+    function bananaf() {
+      var audio = document.getElementById("bananaf");
+      audio.play();
+    }
+  </script>
+  <audio id="bananaf" src="https://myspeech.borgcreative.com/f/banana-f.mp3"></audio>
+
+
+
+  <script>
+    function s4() {
+        var x = document.getElementById("fruit");
+        document.getElementById("fruit").innerHTML = '<p><button onclick="orangef()" class="btn btn-success" type="button">Orange</button><button onclick="bananaf()" class="btn btn-success" type="button">Banana</button>  </p><p><button onclick="closes4()" class="btn btn-dark" type="button">-close-</button> </p>';
+    }
+</script>
+
+
+<script>
+  function closes4() {
+      var x = document.getElementById("fruit");
+      document.getElementById("fruit").innerHTML = '';
+  }
+</script>
 </td></tr></tbody></table></div></div></div></div></div><footer class="bg-white sticky-footer"><div class="container my-auto"><div class="text-center my-auto copyright"><span>Copyright © Borg Creative Studios, LLC 2021</span></div></div></footer></div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div><script src="assets/bootstrap/js/bootstrap.min.js"></script><script src="assets/js/bs-init.js"></script><script src="assets/js/sounds.js"></script><script src="assets/js/theme.js"></script></body></html>
